@@ -4,54 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
-      <img src="logo1.png" alt="Logo" class="logo">
-      <div class="left-box1"></div>
-      <div class="left-box2"></div>
-      <div class="left-box3"></div>
-      <div class="left-box4"></div>
-      <div class="left-box5"></div>
-        <nav class="nav-container">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Order</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Account</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-          </ul>
-        </nav>
-        <span class="text">ZEPHYR</span>
-        <span class="text1">Elevate Your Stride</span>
-        <span class="grab">GR<span class="A">A</span>B</span>
-        <span class="now">NOW!!</span>
-        
-        <div class="box">
-          <p>
-            The word "Zephyr" is attention-grabbing and memorable, evoking a sense of lightness, movement, and a refreshing breeze. It conveys a modern and trendy image for the brand. The tagline emphasizes the brand's focus on elevating one's stride, suggesting that wearing Zephyr sneakers will enhance your performance and style.
-          </p>
-        </div>
-        <div class="box1">
-          <span class="text2">FEATURES:</span>
-        <ul class="content">
-          <li>Material: Premium </li>
-          <li> Craftsmanship: Meticulous</li>
-          <li>Comfort and Fit: Comfortable</li>
-          <li> Construction: Durable</li>
-          <li>Traction: Reliable </li>
-          <li> Brand Reputation: Reputable </li>
-          <li> Longevity: Resilient</li>
-        </ul>
-        <div class="box2"></div>
-        <div class="box3"></div>
-        </div>
-        <img src="shoes.png" class="shoe">
-        <img src="girl.png" class="girl">
-        <span class="price"> Starting <br> at <br> Just <br> </span>
-        <span class= "tag"> Rs. 499/- </span>
-    <footer class="footer"> </footer>
+    <div class="container">
+        <input type="text" placeholder="0" id="inputField">
+        <table>
+            <tr>
+                <td><button onclick="Clear()" class="btns"> C</button></td>
+                <td><button  onclick="del()" class="btns"> DEL</button></td>
+                <td><button onclick= "output('%')" class="btns"> %</button></td>
+                <td><button onclick= "output('/')" class="btns"> /</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="output('9')"> 9 </button></td>
+                <td><button onclick="output('8')"> 8</button></td>
+                <td><button onclick="output('7')"> 7</button></td>
+                <td><button onclick="output('*')" class="btns"> *</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="output('4')"> 4</button></td>
+                <td><button onclick="output('5')"> 5</button></td>
+                <td><button onclick="output('6')"> 6</button></td>
+                <td><button onclick="output('-')" class="btns"> -</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="output('1')"> 1</button></td>
+                <td><button onclick="output('2')"> 2</button></td>
+                <td><button onclick="output('3')"> 3</button></td>
+                <td><button onclick="output('+')" class="btns"> +</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="output(0)"> 0</button></td>
+                <td><button onclick="output('.')" class="btns"> .</button></td>
+                <td><button onclick="Calculate()" class="btns"> =</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+    
 </body>
 </html>
